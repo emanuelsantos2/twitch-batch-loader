@@ -25,8 +25,7 @@ def dl_progress(count, block_size, total_size):
     sys.stdout.flush()
 
 
-# for each clip in clips.txt
-for clip in open('clips.txt', 'r'):
+def get_clip():
     slug = clip.split('/')[3].replace('\n', '')
     mp4_url, clip_title = retrieve_mp4_data(slug)
     regex = re.compile('[^a-zA-Z0-9_]')
@@ -40,4 +39,3 @@ for clip in open('clips.txt', 'r'):
     urllib.request.urlretrieve(mp4_url, output_path, reporthook=dl_progress)
     print('\nDone.')
 
-print('Finished downloading all the videos.')

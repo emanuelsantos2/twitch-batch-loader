@@ -1,6 +1,4 @@
 # Twitch Clip Batch Downloader  
-![example-gif](https://github.com/amiechen/twitch-batch-loader/blob/master/example.gif)
-
 ### Pre-Install:
 
 1) Get a twitch `Client ID` by registering a twitch app [here](https://dev.twitch.tv/dashboard/apps/create).
